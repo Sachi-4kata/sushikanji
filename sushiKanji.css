@@ -1,0 +1,35 @@
+@charset "utf-8";
+.noren{
+    text-align: center;
+}
+.over{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px 8px 10px 16px;
+    position: relative;
+}
+.over .caption{
+    font-size: 100%;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: snow;
+}
+.over .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.over:hover .mask{
+    opacity: 1;
+}
+
